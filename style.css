@@ -3,6 +3,7 @@
 * {
     margin: 0;
     text-decoration: none;
+    animation: fadeIn 1s ease forwards;
 }
 
 p, h1, h2 {
@@ -364,3 +365,13 @@ nav a:hover {
 }
 
 /* Competencias */
+
+@keyframes fadeIn {
+    from {
+      transform: translateY(-20px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
