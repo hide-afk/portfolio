@@ -11,7 +11,7 @@ p, h1, h2 {
 
 html{
     scroll-behavior: smooth;
-    background: radial-gradient(circle, #515151, #262626);
+    background: radial-gradient(circle, #515151, #1a1a1a);
 }
 body {
     margin: 0;
@@ -61,6 +61,9 @@ nav a:hover {
     transition: 0.5s ease-in-out;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 /* Contacto */
 
@@ -164,9 +167,9 @@ nav a:hover {
     height: 560px;
     margin: 80px auto;
 
-    border: 1px solid #cccccc84;
+    border: 1px solid #2e2e2e63;
     border-radius: 25px;
-    box-shadow: 0 6px 10px #ffffff9b;
+    box-shadow: 1px 6px 10px #0000008e;
     text-align: center;
     font-family: 'Poppins';
     background-color: #2d2d2dbd;
@@ -281,7 +284,7 @@ nav a:hover {
     box-shadow: 1 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     width: 650px;
-    height: 200px;
+    height: 225px;
     border-radius: 8px;
     font-size: 17px;
     z-index: 1;
@@ -313,47 +316,16 @@ nav a:hover {
     padding-left: 50px;
 }
 
+.basecontenedortexto {
+    display: flex;
+}
+
 .contenedortexto {
     margin-top: auto;
     margin-bottom: auto;
-}
-
-
-.otrosproyectos {
-    margin-top: 60px;
-    text-align: center;
-}
-
-.otrosproyectos h1 {
-    margin: 0;
-    margin-top: 100px;
-    margin-bottom: 30px;    
-    font-family: 'Poppins';
-    font-size: 46px;
-    font-weight: bold;
-    text-decoration: none !important;
-    text-shadow: 1px 0px 5px black;
-}
-
-.otrosproyectos p{
-    margin: 0;
-    margin-top: 30px;
-    font-family: 'Helvetica';
-    font-size: 20px;
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    width: 100%;
-}
-
-.desplegableproyectopersonal p{
-    margin: 0;
-    margin-top: 30px;
-    font-family: 'Helvetica';
-    font-size: 20px;
-    width: 50%;
-    text-align: center;
-    margin: 0;
+    position: block;
+    justify-content: center;
+    align-items: center;
 }
 
 .filaproyectos {
@@ -364,66 +336,31 @@ nav a:hover {
     padding: 170px;
 }
 
-.bloqueproyectopersonal {
-    margin: 0;
-    transition: display 2s;
+.tecnologias {
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-.imagenproyectopersonal {
-    height: 230px;
-    width: 230px;
-    box-shadow: 1px 0px 50px black;
-    border-radius: 10%;
-    margin-right: 60px;
+.tecnologias img {
+    width: 30px;
+    height: 30px;
 }
 
-.bloqueimagen {
-    text-align: right;
-}
-.bloqueimagen:hover .desplegableproyectopersonal {
-    display: block;
-    transition: 2s;
+#P2 {
+    margin-top: 50px;
 }
 
-.desplegableproyectopersonal {
-    display: absolute;
-    border: 1px solid #ccc;
-    background-color: #363636;
-    font-family: 'Courier New';
-    box-shadow: 1 0 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    width: 700px;
-    height: 175px;
-    border-radius: 8px;
-    font-size: 17px;
-    z-index: 1;
-    transition: display 2s;
+#P4 {
+    margin-top: 19px;
 }
 
-.desplegableproyectopersonal h1 {
-    font-size: 28px;
-    margin: 0;
-    margin-bottom: 10px;
-    margin-top: 5px;
-    font-family: 'Poppins';
+#P5 {
+    margin-top: 0px;
 }
 
-.desplegableproyectopersonal h2 {
-    font-family: 'Poppins';
-    font-size: 20px;
-    margin: 0;
-    margin-bottom: 25px;
-    font-weight: 600;
-}
-
-.desplegableproyectopersonal p {
-    display: inline;
-    font-size: 16px;
-    text-align: justify;
-    padding-bottom: 10px;
+#Portfolio {
+    margin-top: 15px;
 }
 
 /* Competencias */
