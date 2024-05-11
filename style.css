@@ -1,0 +1,429 @@
+/* Inicial */
+
+* {
+    margin: 0;
+    text-decoration: none;
+}
+
+p, h1, h2 {
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+    background: radial-gradient(circle, #515151, #262626);
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: auto;
+    background-color: transparent;
+}
+nav{
+    width:100%;
+    height:90px;
+    overflow: auto;
+    background-color: transparent;
+}
+
+nav ul {
+    justify-content: right;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+}
+
+nav li {
+    float: right;
+    margin-right: 60px;
+    margin-top:35px;
+}
+
+nav li {
+    float: right;
+    margin-right: 60px;
+    margin-top:35px;
+}
+
+nav a{
+    width: auto;
+    display: block;
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    scale: 100%;
+}
+
+nav a:hover {
+    transform: scale(110%);
+    transition: 0.5s ease-in-out;
+}
+
+
+/* Contacto */
+
+.bloque0 {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.textoportada{
+    display: auto;
+    text-align: left;
+    width: 100%;
+    padding-top: 150px;
+    padding-left: 410px;
+}
+
+.textoportada h1 {
+    font-family: 'Poppins';
+    font-size: 46px;
+    font-weight: bold;
+    text-shadow: 1px 0px 10px black;
+    color: white;
+}
+
+.textoportada h2 {
+    padding-top: 0px;
+    margin-top: 20px;
+    font-size: 22px;
+    display: flex;
+    font-family: 'Poppins';
+    color: white;
+}
+
+.iconosportada {
+    display: flex;
+}
+
+.iconosportada img {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+}
+
+.fotoportada {
+    margin-top: 1px;
+    padding-bottom: 175px;
+}
+
+.fotoportada img{
+    height: 120%;
+}
+
+.botoncv {
+    margin-top: 40px;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 0px;
+    background-color: #636363;
+    border-radius: 15%;
+    width: 135px;
+    height: 50px;
+    border: 1px solid #d1d1d1;
+    text-decoration: none !important;
+}
+
+.botoncv p{
+    margin-right: 10px;
+    padding-left: 20px;
+    margin-top: 5px;
+    font-family: 'Poppins';
+    font-size: 26px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.botoncv img {
+    padding-top: 12px;
+    height: 24px;
+    width: 24px;
+}
+
+
+
+/* Sobre Mí */
+
+.bloque1base {
+    display: grid;
+    grid-template-columns: repeat(1);
+}
+
+.bloque1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 1000px;
+    height: 560px;
+    margin: 80px auto;
+
+    border: 1px solid #cccccc84;
+    border-radius: 25px;
+    box-shadow: 0 6px 10px #ffffff9b;
+    text-align: center;
+    font-family: 'Poppins';
+    background-color: #2d2d2dbd;
+}
+
+.textosobremi {
+    text-align: justify;
+    margin: 0;
+    margin-top: 60px;
+    margin-left: 15px;
+    font-family: 'Poppins';
+}
+
+.textosobremi h1 {
+    margin: 0;
+    margin-bottom: 10px;    
+    font-family: 'Poppins';
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.textosobremi p {
+    margin-top: 20px;
+    font-family: 'Poppins';
+    font-size: 18px;  
+    text-align: justify;
+}
+
+.imagensobremi {
+    margin: auto;
+}
+
+.imagensobremi img {
+    margin-left: 15px;
+    height: 490px;
+    border-radius: 10%;
+    box-shadow: 1px 0px 50px #242424d2;
+}
+
+
+/* Proyectos */
+
+.bloque2 {
+    margin: auto;
+}
+
+.proyectosstucom {
+    margin-top: 60px;
+}
+
+.proyectosstucom h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;    
+    font-family: 'Poppins';
+    font-size: 46px;
+    font-weight: bold;
+    text-shadow: 1px 0px 5px black;
+    text-decoration: none !important;
+}
+
+.proyectosstucom p{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Helvetica';
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.basefilaproyectosstucom {
+    margin: 15px auto auto auto;
+    display: block;
+}
+
+.filaproyectosstucom {
+    display: block;
+    gap: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 50px !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloqueproyecto {
+    margin: 0;
+    transition: display 2s;
+    height: auto;
+    width: auto;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.imagenproyecto {
+    height: 250px;
+    width: 250px;
+    box-shadow: 1px 0px 50px black;
+    border-radius: 5%;
+    transition: 0.5s ease-in-out;
+}
+
+.desplegableproyecto {
+    display: absolute;
+    border: 1px solid #ccc;
+    background-color: #363636;
+    font-family: 'Courier New';
+    box-shadow: 1 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 650px;
+    height: 200px;
+    border-radius: 8px;
+    font-size: 17px;
+    z-index: 1;
+    transition: display 2s;
+}
+
+.desplegableproyecto h1 {
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 15px;
+    text-shadow: 1px 0px 1px black;
+    text-align: left;
+}
+
+.desplegableproyecto h2 {
+    font-family: 'Poppins';
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.desplegableproyecto p {
+    display: contents;
+    font-size: 16px;
+    text-align: justify !important;
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+
+.contenedortexto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.otrosproyectos {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.otrosproyectos h1 {
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 30px;    
+    font-family: 'Poppins';
+    font-size: 46px;
+    font-weight: bold;
+    text-decoration: none !important;
+    text-shadow: 1px 0px 5px black;
+}
+
+.otrosproyectos p{
+    margin: 0;
+    margin-top: 30px;
+    font-family: 'Helvetica';
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+.desplegableproyectopersonal p{
+    margin: 0;
+    margin-top: 30px;
+    font-family: 'Helvetica';
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    margin: 0;
+}
+
+.filaproyectos {
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 50px !important;
+    padding: 170px;
+}
+
+.bloqueproyectopersonal {
+    margin: 0;
+    transition: display 2s;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.imagenproyectopersonal {
+    height: 230px;
+    width: 230px;
+    box-shadow: 1px 0px 50px black;
+    border-radius: 10%;
+    margin-right: 60px;
+}
+
+.bloqueimagen {
+    text-align: right;
+}
+.bloqueimagen:hover .desplegableproyectopersonal {
+    display: block;
+    transition: 2s;
+}
+
+.desplegableproyectopersonal {
+    display: absolute;
+    border: 1px solid #ccc;
+    background-color: #363636;
+    font-family: 'Courier New';
+    box-shadow: 1 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 700px;
+    height: 175px;
+    border-radius: 8px;
+    font-size: 17px;
+    z-index: 1;
+    transition: display 2s;
+}
+
+.desplegableproyectopersonal h1 {
+    font-size: 28px;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-family: 'Poppins';
+}
+
+.desplegableproyectopersonal h2 {
+    font-family: 'Poppins';
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.desplegableproyectopersonal p {
+    display: inline;
+    font-size: 16px;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+/* Competencias */
