@@ -284,7 +284,7 @@ nav a:hover {
     font-family: 'Courier New';
     box-shadow: 1 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    width: 650px;
+    width: 653px;
     height: 225px;
     border-radius: 8px;
     font-size: 17px;
@@ -344,16 +344,17 @@ nav a:hover {
 }
 
 .tecnologias img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+    border-radius: 2px;
 }
 
 #P2 {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #P4 {
-    margin-top: 19px;
+    margin-top: 14px;
 }
 
 #P5 {
@@ -362,6 +363,14 @@ nav a:hover {
 
 #Portfolio {
     margin-top: 10px;
+}
+
+#PhoenixTech {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Poppins';
+
 }
 
 /* Competencias */
