@@ -371,7 +371,7 @@ nav a:hover {
 }
 
 #Portfolio {
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 #PhoenixTech {
@@ -476,8 +476,8 @@ nav a:hover {
     font-family: 'Poppins';
     text-align: left;
     font-size: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
     font-weight: 700;
 }
 
@@ -485,8 +485,8 @@ nav a:hover {
     font-family: 'Poppins';
     text-align: left;
     font-size: 18px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
     color: rgb(230, 230, 230);
     font-weight: 500;
 }
@@ -496,8 +496,8 @@ nav a:hover {
     text-align: left;
     font-size: 16px;
     color: rgb(199, 199, 199);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
     font-weight: normal;
 }
 
