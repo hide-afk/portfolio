@@ -400,7 +400,7 @@ nav a:hover {
     margin-top: 45px;
 }
 
-.bloque3 section {
+.seccionbotones {
     display: flex;
     gap: 150px;
     margin-top: 100px;
@@ -441,4 +441,93 @@ nav a:hover {
 .botontrayectoria img {
     height: 90px;
     width: 90px;
+}
+
+.lineatemporal {
+    width: 100%;
+    margin-top: 250px;
+    z-index: 0;
+    position: absolute;
+}
+
+.lineatemporalacademica {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+}
+
+.tarjetatemporal {
+    display: block;
+    position: relative;
+    height: 145px;
+    width: 450px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #363636;
+    transition: 0.5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjetatemporal h1{
+    margin-top: 13px;
+    font-family: 'Poppins';
+    text-align: left;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 700;
+}
+
+.tarjetatemporal h2{
+    font-family: 'Poppins';
+    text-align: left;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(230, 230, 230);
+    font-weight: 500;
+}
+
+.tarjetatemporal h3{
+    font-family: 'Poppins';
+    text-align: left;
+    font-size: 16px;
+    color: rgb(199, 199, 199);
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: normal;
+}
+
+.lineatemporallaboral {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+}
+
+#SeccionAcademica {
+    display: none;
+    animation: fadeIndelado 2s ease forwards;
+}
+
+#SeccionLaboral {
+    display: none;
+    animation: fadeIndelado 2s ease forwards;
+}
+
+@keyframes fadeIndelado {
+    from {
+      transform: translateX(-20px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  #tarjetabusqueda {
+    height: 155px;
 }

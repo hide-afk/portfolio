@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -28,15 +29,15 @@
     <section>
         <div class="bloque3">
             <h1 id="titulobloque3">Trayectoria</h1>
-            <section>
-                <button class="botontarjeta">
+            <section class="seccionbotones">
+                <button class="botontarjeta" onclick="mostrarAcademica()">
                     <div class="botontrayectoria" id="academica">
                         <h1>Académica</h1>
                         <img src="img/Iconos/academia.png">
                     </div>
                 </button>
 
-                <button class="botontarjeta">
+                <button class="botontarjeta" onclick="mostrarLaboral()">
                     <div class="botontrayectoria" id="laboral">
                         <h1>Laboral</h1>
                         <img src="img/Iconos/laboral.png">
@@ -44,9 +45,51 @@
                 </button>
             </section>
 
+            <section id="SeccionAcademica">
+                <hr class="lineatemporal">
+                <section class="lineatemporalacademica">
+                    <div class="tarjetatemporal">
+                        <h1>Educación Secundaria Obligatoria (ESO)</h1>
+                        <h2>Escola Mare de Déu del Roser</h2>
+                        <h3>Septiembre 2019 - Junio 2023</h3>
+                    </div>
+
+                    <div class="tarjetatemporal">
+                        <h1>CFGM Sistemas microinformáticos y Redes</h1>
+                        <h2>Stucom Pelai</h2>
+                        <h3>Septiembre 2023 - Junio 2025</h3>
+                    </div>
+
+                    <div class="tarjetatemporal">
+                        <h1>CFGS Ciberseguridad - Administración de Sistemas Informáticos en Red</h1>
+                        <h2>Stucom Còrsega</h2>
+                        <h3>Septiembre 2025 - Junio 2027</h3>
+                    </div>
+                </section>
+            </section>
+
+            <section id="SeccionLaboral">
+                <hr class="lineatemporal">
+                <section class="lineatemporallaboral">
+                    <div class="tarjetatemporal">
+                        <h1>Voluntariado</h1>
+                        <h2>Museo de la Ciencia CosmoCaixa</h2>
+                        <h3>Enero 2023 - Mayo 2023</h3>
+                    </div>
+
+                    <div class="tarjetatemporal" id="tarjetabusqueda">
+                        <h1>En búsqueda activa de empleo</h1>
+                        <h2>Barcelona</h2>
+                        <h3>Montaje y reparación de ordenadores <br> Técnico de instalación y mantenimiento de sistemas
+                            o redes</h3>
+                    </div>
+                </section>
+            </section>
+
         </div>
     </section>
 
+    <script src="scripts.js"></script>
 </body>
 
 </html>
