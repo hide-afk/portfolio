@@ -1,5 +1,14 @@
 /* Inicial */
 
+@keyframes fadeIn {
+    from {
+      transform: translateY(-20px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
 * {
     margin: 0;
     text-decoration: none;
@@ -373,14 +382,63 @@ nav a:hover {
 
 }
 
-/* Competencias */
 
-@keyframes fadeIn {
-    from {
-      transform: translateY(-20px);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
+/* Trayectoria */
 
+.bloque3 {
+    margin: 0;
+}
+
+#titulobloque3 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;    
+    font-family: 'Poppins';
+    font-size: 46px;
+    font-weight: bold;
+    text-shadow: 1px 0px 5px black;
+    margin-top: 45px;
+}
+
+.bloque3 section {
+    display: flex;
+    gap: 150px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.botontrayectoria {
+    height: 200px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #363636b7;
+    transition: 0.5s ease-in-out;
+}
+
+.botontarjeta {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.botontarjeta:hover .botontrayectoria{
+    background-color: #2c2c2c;
+    transition: 0.5s ease-in-out;
+}
+
+.botontrayectoria h1 {
+    font-family: 'Poppins';
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.botontrayectoria img {
+    height: 90px;
+    width: 90px;
+}
