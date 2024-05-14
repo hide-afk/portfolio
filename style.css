@@ -502,21 +502,111 @@ nav a:hover {
 
 #SeccionAcademica {
     display: none;
-    animation: fadeIndelado 2s ease forwards;
+    animation: fadeInIzquierda 2s ease forwards;
     margin-bottom: 80px;
 }
 
 #SeccionLaboral {
     display: none;
-    animation: fadeIndelado 2s ease forwards;
+    animation: fadeInDerecha 2s ease forwards;
     margin-bottom: 80px;
 }
 
-@keyframes fadeIndelado {
+#SeccionCursos {
+    display: none;
+    animation: fadeInAbajo 2s ease forwards;
+    margin-bottom: 80px;
+    margin-top: 120px;
+}
+
+.parescartas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.cartascursos {
+    display: absolute;
+    border: 1px solid #ccc;
+    background-color: #363636;
+    font-family: 'Courier New';
+    box-shadow: 1 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: auto;
+    height: auto;   
+    border-radius: 8px;
+    font-size: 17px;
+    z-index: 1;
+    transition: display 2s;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartascursos h1{
+    font-family: 'Poppins';
+    text-align: left;
+    font-size: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 700;
+}
+
+.cartascursos h2{
+    font-family: 'Poppins';
+    text-align: left;
+    font-size: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: rgb(230, 230, 230);
+    font-weight: 500;
+}
+
+.cartascursos h3{
+    font-family: 'Poppins';
+    text-align: left;
+    font-size: 16px;
+    color: rgb(199, 199, 199);
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.imagencurso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#BloquesTrayectoria {
+    animation: none;
+}
+
+@keyframes fadeInIzquierda {
     from {
       transform: translateX(-20px);
     }
     to {
       transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInDerecha {
+    from {
+      transform: translateX(20px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInAbajo {
+    from {
+      transform: translateY(40px);
+    }
+    to {
+      transform: translateY(0);
     }
   }
