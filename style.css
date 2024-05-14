@@ -79,16 +79,19 @@ nav a:hover {
 
 .bloque0 {
     margin-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .textoportada{
-    display: auto;
+    display: block;
     text-align: left;
-    width: 100%;
-    padding-top: 150px;
-    padding-left: 410px;
+    width: auto;
+    align-items: start;
+    margin: 0;
+    padding-bottom: 200px;
 }
 
 .textoportada h1 {
@@ -122,6 +125,7 @@ nav a:hover {
 .fotoportada {
     margin-top: 1px;
     padding-bottom: 175px;
+    display: inline-block;
 }
 
 .fotoportada img{
@@ -136,7 +140,7 @@ nav a:hover {
     padding-left: 20px;
     padding-right: 0px;
     background-color: #636363;
-    border-radius: 15%;
+    border-radius: 8px;
     width: 135px;
     height: 50px;
     border: 1px solid #d1d1d1;
@@ -294,7 +298,7 @@ nav a:hover {
     box-shadow: 1 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     width: 653px;
-    height: 225px;
+    height: auto;   
     border-radius: 8px;
     font-size: 17px;
     z-index: 1;
@@ -303,7 +307,7 @@ nav a:hover {
 
 .desplegableproyecto h1 {
     font-size: 22px;
-    margin: 0;
+    margin-top: 0;
     margin-bottom: 15px;
     text-shadow: 1px 0px 1px black;
     text-align: left;
@@ -358,21 +362,7 @@ nav a:hover {
     border-radius: 2px;
 }
 
-#P2 {
-    margin-top: 20px;
-}
 
-#P4 {
-    margin-top: 14px;
-}
-
-#P5 {
-    margin-top: 0px;
-}
-
-#Portfolio {
-    margin-top: 8px;
-}
 
 #PhoenixTech {
     color: white;
@@ -461,7 +451,7 @@ nav a:hover {
 .tarjetatemporal {
     display: block;
     position: relative;
-    height: 145px;
+    height: auto;
     width: 450px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -469,10 +459,11 @@ nav a:hover {
     transition: 0.5s ease-in-out;
     align-items: center;
     justify-content: center;
+    padding-bottom: 13px;
+    padding-top: 10px;
 }
 
 .tarjetatemporal h1{
-    margin-top: 13px;
     font-family: 'Poppins';
     text-align: left;
     font-size: 20px;
@@ -512,11 +503,13 @@ nav a:hover {
 #SeccionAcademica {
     display: none;
     animation: fadeIndelado 2s ease forwards;
+    margin-bottom: 80px;
 }
 
 #SeccionLaboral {
     display: none;
     animation: fadeIndelado 2s ease forwards;
+    margin-bottom: 80px;
 }
 
 @keyframes fadeIndelado {
@@ -527,7 +520,3 @@ nav a:hover {
       transform: translateX(0);
     }
   }
-
-  #tarjetabusqueda {
-    height: 155px;
-}
