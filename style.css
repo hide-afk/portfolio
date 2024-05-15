@@ -13,6 +13,7 @@
     margin: 0;
     text-decoration: none;
     animation: fadeIn 1s ease forwards;
+    font-family: 'Poppins';
 }
 
 p, h1, h2 {
@@ -431,7 +432,9 @@ nav a:hover {
 .botontrayectoria img {
     height: 90px;
     width: 90px;
+    filter: drop-shadow(1px black);
 }
+
 
 .lineatemporal {
     width: 100%;
@@ -574,10 +577,15 @@ nav a:hover {
 }
 
 .imagencurso {
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+}
+
+.imagencurso img {
     margin-top: 10px;
+    width: 300px;
+    border-radius: 10px;
 }
 
 #BloquesTrayectoria {
