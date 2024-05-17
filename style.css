@@ -116,7 +116,7 @@ nav a:hover {
 
 .iconosportada {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     margin-top: 30px;
 }
@@ -168,7 +168,6 @@ nav a:hover {
     height: 50px;
     border: 1px solid #d1d1d1;
     text-decoration: none;
-    margin-left: 10px;
     transition: 0.5s ease-in-out;
 }
 
