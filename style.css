@@ -124,25 +124,25 @@ nav a:hover {
 .iconosportada img {
     height: 35px;
     width: 35px;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 #iconolinkedin {
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 #iconolinkedin:hover {
     filter: brightness(75%);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 #iconogithub {
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 #iconogithub:hover {
     filter: brightness(75%);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .fotoportada {
@@ -162,7 +162,7 @@ nav a:hover {
     align-items: center;
     gap: 10px;
     padding: 0;
-    background-color: #636363;
+    background-color: #4e4e4e;
     border-radius: 8px;
     width: 100px;
     height: 50px;
@@ -173,7 +173,7 @@ nav a:hover {
 
 .botoncv:hover {
     background-color: #414141;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .botoncv p{
@@ -228,6 +228,7 @@ nav a:hover {
     font-family: 'Poppins';
     font-size: 46px;
     font-weight: bold;
+    text-shadow: 1px 1px 10px black;
 }
 
 .textosobremi p {
@@ -245,7 +246,7 @@ nav a:hover {
     margin-left: 15px;
     height: 490px;
     border-radius: 10%;
-    box-shadow: 1px 0px 50px #242424d2;
+    box-shadow: rgb(0 0 0 / 30%) 15px 13px 20px 14px;
 }
 
 
@@ -320,7 +321,7 @@ nav a:hover {
     border: 1px solid #ccc;
     background-color: #363636;
     font-family: 'Courier New';
-    box-shadow: 1 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 15px black;
     padding: 10px;
     width: 653px;
     height: auto;   
@@ -328,6 +329,7 @@ nav a:hover {
     font-size: 17px;
     z-index: 1;
     transition: display 2s;
+
 }
 
 .desplegableproyecto h1 {
@@ -385,6 +387,7 @@ nav a:hover {
     width: 35px;
     height: 35px;
     border-radius: 2px;
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.596));
 }
 
 
@@ -430,6 +433,7 @@ nav a:hover {
     border-radius: 8px;
     background-color: #363636b7;
     transition: 0.5s ease-in-out;
+    box-shadow: 1px 1px 20px black;
 }
 
 .botontarjeta {
@@ -488,6 +492,7 @@ nav a:hover {
     justify-content: center;
     padding-bottom: 13px;
     padding-top: 10px;
+    box-shadow: 1px 1px 10px black;
 }
 
 .tarjetatemporal h1{
@@ -568,6 +573,7 @@ nav a:hover {
     transition: display 2s;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 1px 10px black;
 }
 
 .cartascursos h1{
