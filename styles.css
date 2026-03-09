@@ -1,0 +1,398 @@
+/* ─── Variables ───────────────────────── */
+:root {
+    --bg: #111111;
+    --surface: #1a1a1a;
+    --border: #2a2a2a;
+    --text: #e8e8e8;
+    --muted: #aaaaaa;
+    --subtle: #777777;
+    --tag-bg: #222222;
+    --col-width: 780px;
+    --radius: 10px;
+    --gap: 1.25rem;
+}
+
+/* ─── Reset ───────────────────────────── */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ─── Base ────────────────────────────── */
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ─── Page layout ─────────────────────── */
+.page {
+    max-width: var(--col-width);
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+/* ─── Card (reusable) ─────────────────── */
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+}
+
+/* ─── Section label ───────────────────── */
+.section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--subtle);
+    margin-bottom: 1rem;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.hero-avatar {
+    flex-shrink: 0;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #2a2a2a;
+    border: 2px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-avatar span {
+    font-family: 'DM Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--muted);
+}
+
+.hero-info {
+    flex: 1;
+}
+
+.hero-name {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    color: var(--text);
+}
+
+.hero-title {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-top: 0.3rem;
+    font-family: 'DM Mono', monospace;
+}
+
+/* CONTACT PILLS */
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+}
+
+.pill {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: var(--tag-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    transition: border-color 0.15s, color 0.15s;
+}
+
+.pill:hover {
+    border-color: #444;
+    color: var(--text);
+}
+
+.pill svg {
+    flex-shrink: 0;
+    width: 15px;
+    height: 15px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* ABOUT */
+.about-text {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+/* EXPERIENCE */
+.exp-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.exp-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.exp-dot-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.35rem;
+}
+
+.exp-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--subtle);
+    flex-shrink: 0;
+}
+
+.exp-line {
+    flex: 1;
+    width: 1px;
+    background: var(--border);
+    margin-top: 5px;
+}
+
+.exp-body {
+    flex: 1;
+    padding-bottom: 0.25rem;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
+.exp-role {
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: var(--text);
+}
+
+.exp-period {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.82rem;
+    color: var(--subtle);
+}
+
+.exp-company {
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin-top: 0.1rem;
+}
+
+/* Logo de empresa/instituto junto al nombre */
+.exp-org {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.org-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 4px;
+}
+
+.exp-desc {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-top: 0.35rem;
+    line-height: 1.6;
+}
+
+.exp-icons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.exp-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+/* SKILLS */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    width: 75px;
+}
+
+.skill-item img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.skill-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--subtle);
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* PROJECTS */
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.project-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.1rem 1.25rem;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+
+.project-title {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.project-link {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--subtle);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.15rem 0.6rem;
+    transition: color 0.15s, border-color 0.15s;
+}
+
+.project-link:hover {
+    color: var(--text);
+    border-color: #444;
+}
+
+.project-desc {
+    font-size: 0.9rem;
+    color: var(--subtle);
+    line-height: 1.6;
+    margin-bottom: 0.6rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.project-tag {
+    background: var(--tag-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.2rem 0.55rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.74rem;
+    color: var(--subtle);
+}
+
+/* EDUCATION — usa los mismos estilos que EXPERIENCE (.exp-list, .exp-item, etc.) */
+
+/* LANGUAGES */
+.lang-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lang-item {
+    width: 80px;
+}
+
+.lang-name {
+    font-weight: 500;
+    font-size: 0.92rem;
+    color: var(--text);
+    text-align: center;
+}
+
+.lang-level {
+    font-size: 0.78rem;
+    color: var(--subtle);
+    font-family: 'DM Mono', monospace;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--subtle);
+    padding-top: 0.5rem;
+}
